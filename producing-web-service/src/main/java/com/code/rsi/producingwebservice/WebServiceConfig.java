@@ -28,7 +28,7 @@ public class WebServiceConfig {
     public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema countriesSchema) {
         DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
         wsdl11Definition.setPortTypeName("CountriesPort");
-        wsdl11Definition.setLocationUri("/ws");
+        wsdl11Definition.setLocationUri("/ws/country");
         wsdl11Definition.setTargetNamespace("http://codespace.rsi.io");
         wsdl11Definition.setSchema(countriesSchema);
         return wsdl11Definition;

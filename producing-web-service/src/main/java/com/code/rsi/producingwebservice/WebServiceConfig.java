@@ -21,7 +21,7 @@ public class WebServiceConfig {
         servlet.setApplicationContext(applicationContext);
         servlet.setTransformWsdlLocations(true);
 
-        return new ServletRegistrationBean(servlet, "/ws/*");
+        return new ServletRegistrationBean(servlet, "/v2/*");
     }
 
     @Bean(name = "countries")
